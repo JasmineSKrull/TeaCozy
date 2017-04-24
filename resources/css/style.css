@@ -10,32 +10,37 @@ html {
 /*header*/
 
 header {
+  position: fixed;
   display: flex;
   border-bottom: 1px solid seashell;
-  padding-bottom: sd;
   height: 69px;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+  align-items: center;
 
 }
 .logo {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  height: 50px;
   margin-left: 10px;
 }
 
 .uppernav {
-  display: flex;
-  align-content: flex-end;
-  justify-content: flex-end;
+  display: block;
   align-items: center;
-
+  flex-direction: row;
+  display: inline-flex;
+  text-align: right;
 }
 
 .upperlink {
   margin: 10px;
   text-decoration: underline;
   color: seashell;
+  text-align: right;
+  display: inline-flex;
+  justify-content: flex-end;
 }
 
 a:active {
@@ -44,4 +49,69 @@ a:active {
 
 a:visited {
   color: seashell;
+}
+
+/*Display Image*/
+
+.displayimg {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  height: 700px;
+}
+
+.copy {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  background-color: black;
+
+}
+
+/*Tea of the month*/
+container {
+  display: inline-flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+}
+
+.teas {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+}
+
+.column {
+  display: inline-flex;
+  flex-flow: column;
+}
+
+.column p {
+  margin-top: 0;
+}
+
+/*Locations*/
+
+.locations {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+
+.locations h2 {
+  padding-top: 60px;
+  padding-bottom: 0px;
+  margin-bottom: 15px;
+}
+
+.copycolumn {
+  background-color: black;
+  display: inline-flex;
+  flex-flow: column;
+  width: 300px;
+  margin-top: 0px;
+  margin-right: 40px;
 }
